@@ -1,5 +1,3 @@
-from multiprocessing import connection
-from colorama import Cursor
 from flask import Flask, render_template, g
 import sqlite3
 
