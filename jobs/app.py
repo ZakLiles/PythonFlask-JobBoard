@@ -1,6 +1,6 @@
 from flask import Flask, render_template, g, request
 import sqlite3
-import datetime
+# import datetime
 
 PATH = 'db/jobs.sqlite'
 
@@ -66,5 +66,5 @@ def review(employer_id):
         rating = request.form['rating']
         title = request.form['title']
         status = request.form['status']
-        date = datetime.datetime.now().strftime("%m/%d/%Y")
+        # date = datetime.datetime.now().strftime("%m/%d/%Y")
     return render_template('review.html', employer_id=employer_id)
